@@ -1,8 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="container">
+    <motion.div className="container" initial={{opacity: 0}} animate={{opacity:1}} transition={{duration: 1.6, delay: 0.5}}>
       <form>
         <div className="mb-3">
           <label className="form-label">メールアドレス</label>
@@ -71,7 +72,7 @@ const Contact = () => {
         maiores sequi beatae, excepturi, incidunt aliquid molestiae, accusantium
         perferendis quibusdam omnis cumque suscipit. Earum.
       </p>
-    </div>
+    </motion.div>
   );
 };
 

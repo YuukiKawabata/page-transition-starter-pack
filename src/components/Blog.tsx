@@ -1,8 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Blog = () => {
   return (
-    <div>
+    <motion.div className="container" initial={{opacity: 0}} animate={{opacity:1}} transition={{duration: 1.6, delay: 0.5}}>
       <h1>ブログ</h1>
 
       <div className="m-auto text-center mb-5">
@@ -100,7 +101,7 @@ const Blog = () => {
         praesentium maxime, sequi dignissimos aliquid nemo, eaque delectus nobis
         temporibus quibusdam magnam iure numquam.
       </p>
-    </div>
+    </motion.div>
   );
 };
 

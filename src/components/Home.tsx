@@ -3,11 +3,11 @@ import reactImage from "../Images/react.png";
 import jsImage from "../Images/js.png";
 import firebaseImage from "../Images/firebase.jpg";
 import profileImage from "../Images/sibainu.jpg";
-
+import { motion } from "framer-motion"; 
 const Home = () => {
   return (
     <section>
-      <div className="container text-center">
+      <motion.div className="container text-center" initial={{opacity: 0}} animate={{opacity:1}} transition={{duration: 1.6, delay: 0.5}}>
         <h1>Shin Code</h1>
 
         <img src={profileImage} className="profileImage" />
@@ -91,7 +91,7 @@ const Home = () => {
             </button>
           </div>
         </section>
-      </div>
+      </motion.div>
     </section>
   );
 };
